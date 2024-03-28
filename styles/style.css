@@ -1,5 +1,161 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+/* shared style  */
+
+.head-title{
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: rgb(19, 19, 24);
+}
+
+.title-description{
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(90, 90, 93);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* header section styles  */
+header {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-second-word {
+  color: #ff5400;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(66, 66, 71);
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.nav-icon {
+  display: none;
+}
+
+.nav-icon i {
+  font-size: 30px;
+}
+
+.banner-img {
+  position: relative;
+  width: 100%;
+  
+  
+  
+}
+
+.banner-img-content {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+   
+}
+
+.banner-title {
+  font-size: 4rem;
+  font-weight: 800;
+  color: white;
+}
+
+.banner-description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
+.inputs {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 16px;
+
+}
+
+.inputs input {
+  border: none;
+  background-color: rgb(255, 255, 255);
+  font-size: 1rem;
+  padding: 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.banner-btn {
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: rgb(255, 84, 0);
+  padding: 14px 32px;
+  color: white;
+  border: none;
+}
+
+/* our popular tours section style  */
+
+.our-popular-tours{
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.our-popular-tours h3{
+  margin-top: 40px;
+}
+
+.popular-tour-img{
+  margin-top: 40px;
+}
+
+/* responsive styles  */
+/* for mobile  */
+
+@media screen and (max-width: 576px) {
+  nav {
+    padding: 20px;
+  }
+  nav ul {
+    display: none;
+  }
+  .nav-icon {
+    display: block;
+  }
+
 }
